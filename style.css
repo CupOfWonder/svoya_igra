@@ -1,0 +1,48 @@
+body {
+	background: #000289;
+	color: #DEDA91;
+	font-size: 40px;
+	font-family: arial;
+	height: 100%;
+}
+#game_field {
+	dispay: block;
+	padding-top: 10%;
+	padding-left: 20%;
+}
+#main_table {
+	border-collapse: collapse;
+	display: block;
+}
+
+#main_table td {
+	text-align: left;
+	border: 1px solid #DEDA91;
+	padding: 10px;
+	min-width: 50px;
+}
+#stats {
+	padding-top: 40px;
+}
+#prize {
+	font-weight: bold;
+}
+#question {
+	display: none;
+	opacity: 0;
+	
+	text-align: center;
+    padding-top: 15%;
+    width: 30%;
+    margin: auto;
+}
+#victory {
+	display: none;
+	opacity: 0;
+	
+	text-align: center;
+	padding-top: 5%;
+}
+.quest-td {
+	cursor: pointer;
+}
