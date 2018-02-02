@@ -157,11 +157,11 @@ function Game() {
 				showVictory();
 				return;
 			}
-			refreshStats();
-			td.html("");
 		} else {
-			td.html("")
+			prize -= q.points;
 		}
+		td.html("")
+		refreshStats();
 		
 		answeredQuestions.push(q.id);
 		
@@ -179,8 +179,10 @@ function Game() {
 		
 		if(answer.right) {
 			prize -= q.points;
-			refreshStats();
+		} else {
+			prize += q.points;
 		}
+		refreshStats();
 		
 		answeredQuestions.splice(answeredQuestions.indexOf(q.id), 1);
 		
